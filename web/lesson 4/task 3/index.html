@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музичний Плейлист</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="playlist-card">
+        <h1>Мій Плейлист</h1>
+        
+        <label for="file-input" class="file-upload-btn">
+            Імпортувати пісні з songs.txt
+        </label>
+        <input type="file" id="file-input" accept=".txt">
+
+        <div id="playlist-container" class="playlist"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
