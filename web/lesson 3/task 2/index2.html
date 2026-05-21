@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 2</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Результати перевірки (1-10):</h2>
+    <div id="log"></div>
+
+    <script>
+        function checkEvenOdd(number) {
+            return number % 2 === 0 ? "парне" : "непарне";
+        }
+
+        const logDiv = document.getElementById('log');
+        let output = "";
+
+        for (let i = 1; i <= 10; i++) {
+            output += `Число ${i} є ${checkEvenOdd(i)}<br>`;
+        }
+        
+        logDiv.innerHTML = output;
+    </script>
+</body>
+</html>
